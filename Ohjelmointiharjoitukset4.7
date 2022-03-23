@@ -1,0 +1,23 @@
+/*
+Harjoitus4 (4.7)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma kysyy käyttäjältä kokonaislukua ja ilmoittaa onko luku parillinen vai pariton.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+
+    cout << "Syota numero ";
+    cin >> x;
+
+    if (x % 2 == 0)
+        cout << x << " on parillinen";
+    else
+        cout << x << " on pariton.";
+
+    return 0;
+}
