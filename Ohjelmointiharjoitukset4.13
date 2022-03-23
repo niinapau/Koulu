@@ -1,0 +1,54 @@
+/*
+Esimerkki: Ohjelmointiharjoitukset4 (4.13)
+Date: 23.3.2022
+Author: Niina Paukkonen
+Comments:
+Hyvinvointikeskuksessa (kuntosali ja hieronta) on valittavana kolme pakettia A, B ja C.
+Paketin A perusmaksu on 150 eur/kuukausi ja siihen sisältyy kaksi hierontaa, 30 eur/kerta.
+Paketin B perusmaksu on 200 eur/kuukausi ja siihen sisältyy neljä hierontaa, 20 eur/kerta.
+Paketin C perusmaksu on 250 eur/kuukausi ja siihen sisältyy kuusi hierontaa, 10 eur/kerta.
+
+Tee ohjelma, joka kysyy paketin (syöttö: A, a tai B, b tai C, c) ja hierontakertojen määrän. Ohjelma
+tulostaa kuukausimaksun. Testaa eri pakettivaihtoehtoja ja hierontakertojen määriä. Esim. Mikä
+paketti on halvin, jos asiakas ottaa viisi hierontaa/kk?
+
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char paketti; //alustetaan muuttujat
+	int hierontakerrat = 0;
+
+	cout << "Syota paketti (A/a, B/b tai C/c)" << endl; //kerrotaan käyttäjälle ohjeita
+	cout << "Paketin A perusmaksu on 150 eur/kuukausi ja siihen sisaltyy kaksi hierontaa, 30 eur/kerta." << endl;
+	cout << "Paketin B perusmaksu on 200 eur / kuukausi ja siihen sisaltyy nelja hierontaa, 20 eur / kerta." << endl;
+	cout << "Paketin C perusmaksu on 250 eur / kuukausi ja siihen sisaltyy kuusi hierontaa, 10 eur / kerta." << endl;
+	cin >> paketti;
+
+	cout << "Anna hierontakertojen maara, 1-6/kk" << endl;
+	cin >> hierontakerrat;
+
+
+	if ((paketti == 'A' || paketti == 'a') || hierontakerrat <= 3 )
+	{
+		cout << "Kuukausimaksusi on 150 eur/kk. " << endl;
+	}
+
+	if ((paketti == 'B' || paketti == 'b') || hierontakerrat < 5 && hierontakerrat >= 4)
+	{
+		cout << "Kuukausimaksusi on 200 eur/kk " << endl;
+	}
+
+	if ((paketti == 'C' || paketti == 'c') || hierontakerrat < 7 && hierontakerrat >= 5)
+	{
+		cout << "Kuukausimaksusi on 250 eur/kk" << endl;
+	}
+
+	cout << "Hyvia treeneja!" << endl;
+
+
+	return 0;
+}
