@@ -1,0 +1,37 @@
+/*
+Harjoitus4 (4.11)
+Date: 23.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma pyytää käyttäjältä opiskelijan ohjelmointikurssilla saaman pistemäärän. Tämän jälkeen
+ohjelma laskee ja tulostaa kurssilta saatavan arvosanan, kun 30 - 44 % maksimipisteistä (90) antaa
+arvosanaksi ykkösen, 45 - 59 % kakkosen, 60 - 74 % kolmosen, 75 - 89 % nelosen ja 90 - 100 %
+viitosen. Alle 30 % tulos antaa arvosanaksi luonnollisesti hylätyn.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	double pisteet = 0.00; //alustetaan muuttujat
+
+	cout << "Tama ohjelma kertoo sinulle arvosanasi" << endl;
+	cout << "Syota saamasi pistemaara" << endl;
+	cin >> pisteet; //kayttaja syottaa maaran
+
+	if (pisteet >= 27 && pisteet <= 39.6) //tassa lasketaan arvosana erillisen asteikon mukaan 
+		cout << "Arvosanasi on 1." << endl;
+	if (pisteet >= 40.5 && pisteet <= 47.7)
+		cout << "Arvosanasi on 2." << endl;
+	if (pisteet >= 54 && pisteet <= 66.6)
+		cout << "Arvosanasi on 3." << endl;
+	if (pisteet >= 67.5 && pisteet <= 80.1)
+		cout << "Arvosanasi on 4." << endl;
+	if (pisteet >= 81)
+		cout << "Arvosanasi on 5." << endl;
+	if (pisteet <= 26)
+		cout << "Kurssi on hylatty" << endl;
+
+	return 0;
+}
