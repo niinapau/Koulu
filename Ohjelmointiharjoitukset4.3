@@ -1,0 +1,20 @@
+/*
+Harjoitus4 (4.3)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments:
+*/
+
+#include <iostream>
+
+int main()
+{
+	int x{ 5 };
+	int y{ 5 };
+	std::cout << x << " " << y << '\n';//Ohjelma tulostaa arvot x ja y
+	std::cout << ++x << " " << --y << '\n'; //Ohjelma kasvattaa x:n arvoa yhdellä ja pienentää y:n arvoa yhdellä
+	std::cout << x << " " << y << '\n';//Ohjelma tulostaa arvot x ja y
+	std::cout << x++ << " " << y-- << '\n'; //Ohjelma kasvattaa x:n arvoa yhdellä ja pienentää y:n arvoa yhdellä, mutta tulostaa muutokset vasta seuraavalla rivillä
+	std::cout << x << " " << y << '\n';//
+	return 0;
+}
