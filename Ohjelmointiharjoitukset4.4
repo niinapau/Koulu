@@ -1,0 +1,29 @@
+/*
+Harjoitus4 (4.4)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma pyytää käyttäjää syöttämään numeron, 
+jonka jälkeen vertaa lukua lukuun 10. Lopuksi tulostaa vastauksen onko 
+käyttäjän syöttämä numero suurempi vai pienempi kuin 10.
+*/
+
+#include <iostream>
+int main()
+{
+	std::cout << "Syötä numero: ";
+	int x;
+	std::cin >> x;
+	if (x > 10)
+	{
+		// Tästä alkaa lohko
+		std::cout << "Syötit luvun " << x << "\n";
+		std::cout << x << " on suurempi kuin 10";
+	}
+	else
+	{
+		// Tästä alkaa lohko
+		std::cout << "Syötit luvun " << x << "\n";
+		std::cout << x << "on pienempi kuin 10";
+	}
+	return 0;
+}
