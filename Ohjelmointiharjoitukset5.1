@@ -1,0 +1,47 @@
+/* Comments:
+Ohjelmointiharjoitukset5 (5.1)
+Date: 23.3.2022
+Author: Niina Paukkonen
+Ohjelma kysyy arvosanan numerona ja tulostaa sitten sanallisen arvosanan.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	char arvosana;
+
+	cout << "Anna arvosana" << endl;
+	cin >> arvosana;
+
+	switch (arvosana)
+	{
+	case '1':
+		cout << "TYYDYTTAVA 1" << endl;
+		break;
+
+	case '2':
+		cout << "TYYDYTTAVA 2" << endl;
+		break;
+
+	case '3':
+		cout << "HYVA 3" << endl;
+		break;
+
+	case '4':
+		cout << "HYVA 4" << endl;
+		break;
+
+	case '5':
+		cout << "KIITETTAVA 5" << endl;
+		break;
+
+	default:
+		cout << "Vaara syote, anna arvosana uudelleen" << endl;
+
+	}
+
+	return 0;
+}
