@@ -1,0 +1,29 @@
+/*
+Harjoitus4 (4.10)
+Date: 23.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma pyytää käyttäjältä kopioiden määrän ja tulostaa niiden hinnan. Hinta on riippuvainen kappaleiden määrästä.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	float kopio = 0.00; //alustetaan muuttujat
+
+
+	cout << "Tama ohjelma kertoo sinulle kopiointihinnat" << endl;
+	cout << "Syota haluamasi kopioiden maara" << endl;
+	cin >> kopio; //kayttaja syottaa maaran
+
+	if (kopio <= 10) //tassa lasketaan lopullinen hinta
+		cout << "Kopioiden hinta on " << kopio * 0.40 << " euroa." << endl;
+	else if (kopio <= 20)
+		cout << "Kopioiden hinta on " << kopio * 0.15 + 0.50 << " euroa." << endl;
+	else if (kopio >= 20)
+		cout << "Kopioiden hinta on " << kopio * 0.10 + 0.26 << " euroa." << endl;
+
+	return 0;
+}
