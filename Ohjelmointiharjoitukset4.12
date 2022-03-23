@@ -1,0 +1,58 @@
+/*
+Esimerkki: Ohjelmointiharjoitukset4 (4.12)
+Date: 23.3.2022
+Author: Niina Paukkonen
+Comments:
+Ohjelma kysyy ensin käyttäjän sukupuolen ja tämän jälkeen iän. Lopuksi ohjelma tulostaa
+jonkin lausahduksen seuraavan ohjeen mukaisesti: Mies 0-55 vuotta: "Olet mies parhaassa iässä!",
+Mies 56-100 vuotta: "Olet viisas mies!", Nainen 0-55 vuotta: "Olet neito kauneimmillaan!", Nainen
+56-100 vuotta: "Näytät nuorelta ikäiseksesi!", Muuten "Ohjelmassa tapahtunut virhe!" Ikä
+käsitellään kokonaisluku muuttujana ja sukupuoli merkkimuuttujana (m/n). Isoja kirjaimia ei
+tarvitse huomioida.
+
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int ika = 0; //alustetaan muuttujat
+	char sukupuoli;
+
+	cout << "Syota ikasi." << endl;
+	cin >> ika;
+
+	cout << "Anna sukupuolesi." << endl;
+	cin >> sukupuoli;
+
+
+	if ((sukupuoli == 'M' || sukupuoli == 'm') && ika <= 55)
+	{
+		cout << "Olet mies parhaassa iassa!" << endl;
+	}
+
+	if ((sukupuoli == 'M' || sukupuoli == 'm') && ika >= 55 && ika <= 100)
+	{
+		cout << "Olet viisas mies!" << endl;
+	}
+
+	else if ((sukupuoli == 'N' || sukupuoli == 'n') && ika <= 55)
+	{
+		cout << "Olet neito kauneimmillaan!" << endl;
+	}
+	else if ((sukupuoli == 'N' || sukupuoli == 'n') && ika >= 55 && ika <= 100)
+	{
+		cout << "Naytat nuorelta ikaiseksesi!" << endl;
+	}
+
+	else
+	{
+		cout << "Ohjelmassa tapahtunut virhe" << endl;
+	}
+
+	cout << "Kiitos vastauksesta." << endl;
+
+
+	return 0;
+}
