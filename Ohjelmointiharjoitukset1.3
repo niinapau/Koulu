@@ -1,0 +1,32 @@
+/*
+Tulostus3 (Harjoitus 1.3)
+Date: 15.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelmassa harjoitellaan tulostusta näytölle.
+*/
+
+//otetaan käyttöön otsikkotiedostot
+#include<iostream>
+#include<string> //mahdollistaa merkkijonon 
+using namespace std;
+
+int main()
+{
+	int k_Luku = 15; //kokonaisluku, muuttujan määrittely ja alustus
+	double pii = 3.14195; //desimaaliluku
+	float alv = 0.24; //desimaaliluku, alv%
+	char merkki1 = 'a'; //merkkimuuttuja
+	string	nimi1 = "Kalle"; //merkkijonomuuttuja
+	bool sataa = true; //voidaan tallentaa yhden bitin verran tietoa, true = 1, false = 0
+
+	cout << k_Luku << endl; //tulostetaan muuttujan sisältö näytölle
+	cout << pii << endl;
+	cout << alv << endl;
+	cout << merkki1 << endl; 
+	cout << "Heippa" << endl;
+	cout << nimi1 << endl;
+	cout << sataa << endl;
+	cout << nimi1 << " lahti kalaan ja sai " << pii << " kg painoisen kalan."; //tulostuksen ketjutus ä = \84, ö = \94
+
+	return 0; //ohjelma ei palauta mitään
+}
