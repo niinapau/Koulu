@@ -1,0 +1,64 @@
+Esimerkit3
+
+/*
+Esimerkki: switch...case
+Date: 23.3.2022
+Author: Niina Paukkonen
+Comments: 
+Ohjelma kysyy ylioppilaskirjoituksen arvosanan ja tulostaa arvosanaa kuvaavan tekstin.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	char arvosana;
+
+	cout << "Anna arvosana" << endl;
+	cin >> arvosana;
+
+	switch (arvosana)
+	{
+	case 'L':
+	case 'l':
+		cout << "Laudatur" << endl;
+		break;
+	
+	case 'E':
+	case 'e':
+		cout << "Eximia cum laude approbatur" << endl;
+		break;
+
+	case 'M':
+	case 'm':
+		cout << "Magna cum laude approbatur" << endl;
+		break;
+
+	case 'C':
+	case 'c':
+		cout << "Cum laude approbatur" << endl;
+		break;
+
+	case 'B':
+	case 'b':
+		cout << "Lubenter approbatur" << endl;
+		break;
+
+	case 'A':
+	case 'a':
+		cout << "Approbatur" << endl;
+		break;
+
+	case 'I':
+	case 'i':
+		cout << "Improbatur" << endl;
+		break;
+	default: 
+		cout << "Vaara syote, anna arvosana uudelleen" << endl;
+
+	}
+
+	return 0;
+}
