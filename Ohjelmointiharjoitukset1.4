@@ -1,0 +1,43 @@
+/*
+Operaattorit1
+Date: 15.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelmassa harjoitellaan aritmeettisten operaattoreiden käyttöä
++ summa
+- erotus
+* tulo
+/ osamäärä
+% jakojäännös
+
+*/
+
+//otetaan käyttöön otsikkotiedostot
+#include<iostream>
+#include<string> //mahdollistaa merkkijonon 
+using namespace std;
+
+int main()
+{
+	int a = 10;
+	int b = 2;
+	int tulos = 10;
+	int laskuri = 0;
+
+	int summa = a + b;
+	int erotus = a - b;
+	int tulo = a * b;
+	int osamaara = a / b;
+	int jakojaannos = a % b; //voidaan tutkia onko joku luku parillinen vai 
+	tulos += 10; // tulos = tulos + 10
+	laskuri++; // laskuri = laskuri + 1; kasvatetaan laskurin arvoa yhdellä
+
+	cout << "lukujen summa on " << summa << endl;
+	cout << "lukujen erotus on " << erotus << endl;
+	cout << "lukujen tulo on " << tulo << endl;
+	cout << "lukujen osamaara on " << osamaara << endl;
+	cout << "lukujen jakojaannos on " << jakojaannos << endl;
+	cout << tulos << endl;
+	cout << laskuri << endl;
+
+	return 0;
+}
