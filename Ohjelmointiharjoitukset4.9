@@ -1,0 +1,35 @@
+/*
+Harjoitus4 (4.9)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma kysyy kirjeen painon (g), jonka jälkeen tulostaa sen postimaksun euroina (sentteinä) ja Englannin puntina.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	double numero1 = 0.00; //alustetaan muuttujat
+	double numero2 = 2.80;
+	double numero3 = 2.80 * 0.83;
+	double numero4 = 3.50 * 0.83;
+	double numero5 = 5.60 * 0.83;
+	double numero6 = 7.00 * 0.83;
+
+	cout << "Tama ohjelma kertoo sinulle kirjeen postimaksun euroina ja puntina" << endl;
+	cout << "Syota kirjeen paino grammoina ja paina enter" << endl;
+	cin >> numero1; //kayttaja syottaa painon
+
+	if (numero1 < 51) //tassa tapahtuu lopullinen laskutoimitus
+		cout << "Postimaksu on 2.80 euroa" << " eli " << numero3 << " puntaa." << endl;
+	if (numero1 > 51 &&numero1 < 501)
+		cout << "Postimaksu on 3.50 euroa" << " eli " << numero4 << " puntaa." << endl;
+	if (numero1 > 500 &&numero1 < 1001)
+		cout << "Postimaksu on 5.60 euroa" << " eli " << numero5 << " puntaa." << endl;
+	if (numero1 >= 1001)
+		cout << "Postimaksu on 7.00 euroa" << " eli " << numero6 << " puntaa." << endl;
+
+	return 0;
+}
