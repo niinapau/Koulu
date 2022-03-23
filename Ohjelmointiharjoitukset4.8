@@ -1,0 +1,46 @@
+/*
+Harjoitus4 (4.8)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma pyytää käyttäjältä kolme liukulukutyyppistä lukua ja tulostaa ne suuruusjärjestyksessä.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	float numero1 = 0.00; //alustetaan muuttujat
+	float numero2 = 0.00;
+	float numero3 = 0.00;
+
+	cout << "Tama ohjelma asettaa kolme numeroa suuruusjarjestykseen, pienimmasta suurimpaan" << endl;
+	cout << " " << endl;
+	cout << "Syota ensimmainen numero ja paina enter" << endl;
+	cin >> numero1;
+	cout << " " << endl;
+	cout << "Syota toinen numero ja paina enter" << endl;
+	cin >> numero2;
+	cout << " " << endl;
+	cout << "Syota kolmas numero ja paina enter" << endl;
+	cin >> numero3;
+	cout << " " << endl;
+
+	if (numero3 < numero2 && numero2 < numero1)
+		cout << "Numeroiden suuruusjarjestys on " << numero3 << ", " << numero2 << ", " << numero1 << "." << endl;
+	if (numero2 < numero3 && numero3 < numero1)
+		cout << "Numeroiden suuruusjarjestys on " << numero2 << ", " << numero3 << ", " << numero1 << "." << endl;
+	if (numero3 < numero1 && numero1 < numero2)
+		cout << "Numeroiden suuruusjarjestys on " << numero3 << ", " << numero1 << ", " << numero2 << "." << endl;
+	if (numero1 < numero3 && numero3 < numero2)
+		cout << "Numeroiden suuruusjarjestys on " << numero1 << ", " << numero3 << ", " << numero2 << "." << endl;
+	if (numero1 < numero2 && numero2 < numero3)
+		cout << "Numeroiden suuruusjarjestys on " << numero1 << ", " << numero2 << ", " << numero3 << "." << endl;
+	if (numero2 < numero1 && numero1 < numero3)
+		cout << "Numeroiden suuruusjarjestys on " << numero2 << ", " << numero1 << ", " << numero3 << "." << endl;
+
+	cout << " " << endl;
+	return 0;
+}
