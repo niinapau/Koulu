@@ -1,0 +1,24 @@
+/*
+Harjoitus4 (4.6)
+Date: 22.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma kysyy käyttäjältä jännitteen. Jos jännite = 230 V tulostuu teksti ”Jännite on sopiva”.
+Jos jännite on < 230 V tulostuu ”Jännite on liian alhainen” ja jos jännite on > 230 V tulostuu teksti
+”Jännite on liian korkea”.
+*/
+
+#include <iostream>
+
+int main()
+{
+	std::cout << "Syota jannite: ";
+	int x;
+	std::cin >> x;
+	if (x > 230)
+		std::cout << x << "Jannite on liian korkea\n";
+	else if (x < 230)
+		std::cout << x << "Jannite on liian matala\n";
+	else (x == 230);
+		std::cout << x << "Jannite on sopiva\n";
+	return 0;
+}
