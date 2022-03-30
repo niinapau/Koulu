@@ -1,0 +1,28 @@
+/*
+Esimerkki
+Date: 29.3.2022
+Author: Niina Paukkonen
+Comments: HyppykÃ¤skyt
+*/
+
+#include <iostream> //io-virta kÃ¤yttÃ¶Ã¶n
+using namespace std;
+
+int main()
+{
+	int laskuri = 0;
+
+	while (laskuri < 10) //suoritetaan niin kauan kuin luku >= 0, negatiivisella luvulla ulos
+	{
+		if (laskuri == 5)
+		{
+			laskuri++;
+			continue; //hypÃ¤tÃ¤Ã¤n silmukan alkuun
+			//break; //hypÃ¤tÃ¤Ã¤n loppuun
+
+		}
+		cout << laskuri << endl;
+		laskuri++;
+	}
+	return 0;
+}
