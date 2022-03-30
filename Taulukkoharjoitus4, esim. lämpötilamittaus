@@ -1,0 +1,53 @@
+/*
+Taulukko4
+Date: 30.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma pyytää käyttäjältä kokonaislukutaulukkoon kymmenen lukua väliltä 0-1000.
+Ohjelma tulostaa taulukon suurimman ja pienimmän luvun.
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+
+{
+	const int koko = 10; //taulukon koko
+	int lukuTaulukko[koko];
+	int luku;
+	int suurin;
+	int pienin;
+	int temp1 = 0;
+	int temp2 = 1000;
+
+	for (int i = 0; i < koko; i++)
+	{
+		cout << "Anna" << i + 1 << "." << "luku valilta 0-1000." << endl;
+		cin >> luku;
+		lukuTaulukko[i] = luku;
+
+	}
+
+	//käydään taulukko läpi
+	for (int i = 0; i < koko; i++)
+	{
+		if (lukuTaulukko[i] > temp1)
+		{
+			temp1 = lukuTaulukko[i];
+			suurin = temp1;
+		}
+
+
+		if (lukuTaulukko[i] < temp2)
+		{
+			temp2 = lukuTaulukko[i];
+			pienin = temp2;
+		}
+		//cout << lukuTaulukko[i] << endl;
+	}
+		cout << "Taulukon suurin luku on " << suurin << endl;
+		cout << "Taulukon pienin luku on " << pienin << endl;
+
+	return 0;
+}
