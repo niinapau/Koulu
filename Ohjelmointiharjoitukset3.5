@@ -1,0 +1,42 @@
+/*Harjoitus3(3.5)
+Date: 30.3.2022
+Author: Niina Paukkonen
+Comments: Kahden samankeskisen ympyrän säteet ovat r1 ja r2 (r1 > r2). Kirjoita ohjelma, joka pyytää
+käyttäjältä säteet ja laskee ympyröiden väliin jäävän ympyrärenkaan alan.
+*/
+
+#include <iostream>
+using namespace std;
+
+float ala1(float r1) //esitellään aliohjelmat
+{
+	return (3.14 * r1 * r1);
+}
+
+float ala2(float r2)
+{
+	return (3.14 * r2 * r2);
+}
+
+float renkaanAla(float ala1, float ala2) 
+{
+	return (ala1 - ala2);
+}
+
+int main()
+{
+	float r1 = 0.0;
+	float r2 = 0.0;
+	float ala = 0.0;
+	float ala1 = 0.0;
+	float ala2 = 0.0; //alustetaan muuttujat
+
+	cout << "Syota ympyran sade : " << endl;
+    cin >> r1;
+	cout << "Syota toisen ympyran sade : " << endl;
+    cin >> r2;
+	cout << "Ympyroiden valiin jaava ympyrarenkaan ala " << " on " << renkaanAla << endl;
+
+	return 0;
+
+}
