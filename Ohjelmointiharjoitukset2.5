@@ -1,0 +1,23 @@
+/* Harjoitus2(2.5.)
+Date: 29.3.2022
+Author: Niina Paukkonen
+Comments: Tee ohjelma, joka tulostaa suorakulmion pituuden ja leveyden ja laskee suorakulmion pinta-alan. Suorakulmion pituus on 5110.311 ja leveys 10. 
+Tulostus siten, että pituus, leveys ja pinta - ala ovat samassa sarakkeessa allekkain.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double suorakulmion_ala, pituus, leveys; //alustetaan muuttujat
+	pituus = 5110.311;
+		leveys = 10;
+
+	suorakulmion_ala = pituus * leveys; //funktio
+
+	cout << "Suorakulmion pituus : " << pituus << endl; //tulostus
+	cout << "leveys :  " << leveys << endl;
+	cout << "pinta-ala : " << suorakulmion_ala << endl;
+	return 0;
+} 
