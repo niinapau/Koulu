@@ -1,0 +1,39 @@
+/* Taulukko 2
+Date: 30.3.2022
+Author: Niina Paukkonen
+Comments: Harjoitellaan taulukon käyttöä
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+
+{
+	const int koko = 10;
+	int omaTaulukko[koko];
+	int luku;
+	 //taulukkoon lukeminen, syotto nappaimistolta
+	for (int i = 0; i < koko; i++)
+	{
+		cout << "Anna " << i + 1 << "." << "numero" << endl;
+		cin >> luku;
+		omaTaulukko[i] = luku;
+
+	}
+	//taulukosta tulostaminen (C)
+		//for (int i = 0; i < koko; i++)
+		//{
+			//cout << omaTaulukko[i] << endl;
+		//}
+
+		//taulukosta tulostaminen (C++)
+		for (int numero : omaTaulukko)
+		{
+			cout << numero << endl;
+
+		}
+
+	return 0;
+}
