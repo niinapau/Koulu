@@ -1,0 +1,30 @@
+// Harjoitus3 (3.3)
+// Date: 29.3.2022
+// Author: Niina Paukkonen
+// Comments: Ohjelma, joka kysyy syöttötietona ympyrän säteen, jonka jälkeen laskee ja tulostaa ympyrän alan, käytetään funktiota Ala()
+
+#include <iostream>
+
+using namespace std;
+
+float Ala (float sade); //esitellään funktiot
+
+int main(int) //pääohjelma
+{
+    float sade;
+    float ala;
+    float pintaAla;
+
+    cout << "Syota ympyran sade : " << endl;
+    cin >> sade;
+    
+    pintaAla = Ala(sade);
+    cout << "Pinta-ala ympyralle jonka sade on " << sade << " on " << pintaAla << endl;
+
+}
+
+float Ala (float sade) //aliohjelma
+{
+    return (3.14 * sade * sade);
+	
+
