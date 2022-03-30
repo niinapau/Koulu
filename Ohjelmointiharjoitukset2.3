@@ -1,0 +1,31 @@
+// Harjoitus2 (2.3.)
+// Date: 22.3.2022
+// Author: Niina Paukkonen
+// Comments: Ohjelma laskee kahden liukuluvun summan ja erotuksen. Ohjelmassa käytetään
+// sopivia funktioita (aliohjelmia).
+
+#include <iostream>
+float summaa(float luku1, float luku2)
+{
+	return (luku1 + luku2);
+}
+float erottaa(float luku1, float luku2)
+{
+	return (luku1 - luku2);
+}
+void main(void)
+{
+	float luku1;
+	float luku2;
+	float summa;
+	float erotus;
+	std::cout << "Anna 1. desim.luku: ";
+	std::cin >> luku1;
+	std::cout << "Anna 2. desim.luku: ";
+	std::cin >> luku2;
+	summa = summaa(luku1, luku2);
+	erotus = erottaa(luku1, luku2);
+	std::cout << "Lukujen summa on: " << summa << "Lukujen erotus on: " << erotus
+		<< std::endl;
+	//return 0;
+}
