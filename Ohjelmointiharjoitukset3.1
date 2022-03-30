@@ -1,0 +1,28 @@
+// Ohjelmointiharjoitukset 3 (3.1)
+// Date: 30.3.2022
+// Author: Niina Paukkonen
+// Comments: Ohjelma kysyy summan euroina ja muuntaa sen ruotsin kruunuiksi, käytetään aliohjelmaa
+
+#include <string>
+#include <iostream>
+using namespace std;
+
+
+float kruunuiksi (float euro);//funktion esittely
+void main() //pääohjelma
+{
+	float euro;
+	float kruunu;
+	cout << "Syota summa euroina";
+	cin >> euro;
+	kruunu = kruunuiksi(euro);//kutsutaan aliohjelmaa kruunuiksi (euro)
+	
+	kruunuiksi(euro);
+	cout << euro << " euroa on " << kruunu << " Ruotsin kruunua";
+
+}
+float kruunuiksi(float euro)//aliohjelma
+{
+	return (euro*10.4);
+}
+
