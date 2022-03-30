@@ -1,0 +1,49 @@
+/*Harjoitus3(3.6)
+Date: 30.3.2022
+Author: Niina Paukkonen
+Comments: Tee ohjelma, joka laskee ja tulostaa kolmen annetun liukuluvun keskiarvon, summan ja tulon. 
+Käytä ohjelmassa funktioita esim. keskiarvo(). 
+*/
+
+#include <iostream>
+using namespace std;
+
+float summaa(float luku1, float luku2, float luku3) //esitellään aliohjelmat summaa, erottaa, keskiarvo
+{ return (luku1 + luku2 + luku3); 
+}  
+
+float kertoo
+(float luku1, float luku2, float luku3) 
+{ return (luku1 * luku2 * luku3);
+} 
+
+float keskiarvo
+(float luku1, float luku2, float luku3)
+{
+	return (luku1 + luku2 + luku3 /3);
+}
+
+int main() 
+{
+	float luku1;  
+	float luku2;  
+	float luku3;
+	float summa;  
+	float tulo;
+	float keskiarvo1;
+		cout << "Anna 1. desimaaliluku: " << endl;
+		cin >> luku1;  
+		cout << "Anna 2. desimaaliluku: " << endl;
+		cin >> luku2;  
+		cout << "Anna 3.desimaaliluku" << endl;
+		cin >> luku3;
+	
+	summa = summaa(luku1, luku2, luku3);  
+	tulo = kertoo(luku1, luku2, luku3);
+	keskiarvo1 = keskiarvo(luku1, luku2, luku3);
+		cout << "Lukujen summa on: " << summa << endl;
+		cout << "Lukujen tulo on: " << tulo << endl;
+		cout << "Lukujen keskiarvo on: " << keskiarvo1 << endl;
+	//return 0;  
+
+} 
