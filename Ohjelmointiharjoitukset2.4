@@ -1,0 +1,18 @@
+// Harjoitus2 (2.4.)
+// Date: 29.3.2022
+// Author: Niina Paukkonen
+// Comments: Ohjelma, joka kysyy syöttötietona ympyrän säteen, jonka jälkeen laskee ja tulostaa ympyrän alan
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float sade, ala;
+
+    cout << "Syota ympyran sade : ";
+    cin >> sade;
+    ala = 3.14 * sade * sade;
+    cout << "Pinta-ala ympyralle jonka sade on "
+        << sade << " on " << ala;
+}
