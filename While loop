@@ -1,0 +1,29 @@
+/*
+Esimerkki: while-loop
+Date: 29.3.2022
+Author: Niina Paukkonen
+Comments: While-loop ja do-While esimerkki
+*/
+
+#include <iostream> //io-virta kÃ¤yttÃ¶Ã¶n
+using namespace std;
+
+int main()
+{
+	int laskuri = 0; //suoritetaan niin kauan kuin laskuri on < 10
+	while (laskuri < 10)
+	{
+		cout << laskuri << endl;
+		laskuri++; //kasvatetaan laskurin summaa yhdellÃ¤
+
+	}
+
+	int laskuri2 = 0;
+	do
+	{
+		cout << laskuri2 << endl;
+		laskuri2++; //laskurimuuttujan pÃ¤ivitys
+	} while (laskuri2 < 10);
+
+	return 0;
+}
