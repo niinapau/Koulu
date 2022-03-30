@@ -1,0 +1,29 @@
+/*
+Esimerkki
+Date: 29.3.2022
+Author: Niina Paukkonen
+Comments: Ohjelma laskee syÃ¶tettyjen positiivisten kokonaislukujen summan.
+*/
+
+#include <iostream> //io-virta kÃ¤yttÃ¶Ã¶n
+using namespace std;
+
+int main()
+{
+	int summa = 0;
+	int luku = 0;
+	cout << "Anna positiivinen kokonaisluku. Negatiivisella luvulla quit." << endl;
+	cin >> luku;
+
+
+	while (luku >= 10) //suoritetaan niin kauan kuin luku >= 0, negatiivisella luvulla ulos
+	{
+		summa = summa + luku;
+		cout << "Anna positiivinen kokonaisluku. Negatiivisella luvulla quit." << endl;
+		cin >> luku;
+
+	}
+	cout << "Annettujen lukujen summa on: " << summa << endl;
+
+	return 0;
+}
