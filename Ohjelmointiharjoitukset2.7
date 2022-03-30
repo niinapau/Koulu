@@ -1,0 +1,60 @@
+/*
+Harjoitus2(2.7)
+Date: 29.3.2022
+Author: Niina Paukkonen
+Comments: Tee ohjelma, joka kysyy käyttäjältä täydennykset alla olevaan kertomukseen.
+
+*/
+
+#include<iostream>
+#include <string>
+using namespace std;
+
+//pääohjelma
+void main()
+{
+	//Alustetaan muuttujat
+	string adjektiivi1, tyton_nimi, adjektiivi2, ammatti1, vaate, harrastus1, adjektiivi3, ammatti2, pojan_nimi, adjektiivi4, naisen_nimi;
+	double number;
+
+	//Käyttäjä antaa seuraavat tiedot
+	cout << "Syota adjektiivi:\n";
+	cin >> adjektiivi1;
+
+	cout << "Syota tyton nimi:\n";
+	cin >> tyton_nimi;
+
+	cout << "Syota adjektiivi:\n";
+	cin >> adjektiivi2;
+
+	cout << "Syota ammatti:\n";
+	cin >> ammatti1;
+
+	cout << "Syota vaate:\n";
+	cin >> vaate;
+
+	cout << "Syota harrastus:\n";
+	cin >> harrastus1;
+
+	cout << "Syota adjektiivi:\n";
+	cin >> adjektiivi3;
+
+	cout << "Syota ammatti:\n";
+	cin >> ammatti2;
+
+	cout << "Syota pojan nimi:\n";
+	cin >> pojan_nimi;
+
+	cout << "Syota adjektiivi:\n";
+	cin >> adjektiivi4;
+
+	cout << "Syota naisen nimi:\n";
+	cin >> naisen_nimi;
+
+	//Tarinankerronta
+	cout << "Olipa kerran " << adjektiivi1 << " tytto nimeltaan " << tyton_nimi << ", joka oli ammatiltaan " << ammatti1 << "." << endl;
+	cout << "Hanen lempivaatteensa oli " << vaate << " ja hanen mieliharrastuksensa oli " << harrastus1 << "." << endl;
+	cout << "Han haluaisi menna naimisiin " << adjektiivi2 << " pojan kanssa, joka on ammatiltaan" << ammatti2 << " ja nimeltaan " << pojan_nimi << endl;
+	cout << "Mutta tyton " << adjektiivi4 << naisen_nimi << " aiti ei halua tavatakaan poikaa." << endl;
+	system("pause");
+}
