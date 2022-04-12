@@ -1,0 +1,298 @@
+/*Harjoitus 2.1
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää LED-kuvion: 0101 0101 hexa-lukua käyttäen.
+ */
+
+//muuttujat
+byte ledKuvio1 = 0x55; //01010101bin
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+/*Harjoitus 2.2
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää LED-kuvion: 0101 0111 desimaalilukua käyttäen.
+ */
+
+//muuttujat
+byte ledKuvio1 = 87;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+
+/*Harjoitus 2.3
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää LED-kuvion: 1100 0011 binäärilukua käyttäen.
+ */
+
+//muuttujat
+byte ledKuvio1 = B11000011;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+
+/*Harjoitus 2.4
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää LED-kuvion: 0110 0110 hexa-lukua käyttäen
+ */
+
+//muuttujat
+byte ledKuvio1 = 0x66;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+/*Harjoitus 2.5
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: . Tee ohjelma, joka sytyttää LED-kuvion: 1110 1111 desimaalilukua käyttäen
+ */
+
+//muuttujat
+byte ledKuvio1 = 239;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+/*Harjoitus 2.6
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää LED-kuvion: 0111 1101 hexa-lukua käyttäen.
+ */
+
+//muuttujat
+byte ledKuvio1 = 0x7D;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+}
+
+/*Harjoitus 2.7
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka sytyttää edellisten tehtävien LED-kuviot toistuvasti 0,5 sekunnin
+välein.
+ */
+
+//muuttujat
+byte ledKuvio1 = 0x55; //0101 0101
+byte ledKuvio2 = 87; // 0101 0111
+byte ledKuvio3 = 195; // 1100 0011
+byte ledKuvio4 = 0x66; //0110 0110 
+byte ledKuvio5 = 239; // 1110 1111
+byte ledKuvio6 = 0x7d; //0111 1101
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+  delay(500);
+   PORTD = ledKuvio2;
+  delay(500);
+   PORTD = ledKuvio3;
+  delay(500);
+   PORTD = ledKuvio4;
+  delay(500);
+   PORTD = ledKuvio5;
+  delay(500);
+   PORTD = ledKuvio6;
+  delay(500);
+ 
+}
+
+/*Harjoitus 2.8
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka juoksuttaa palavaa LEDiä edestakaisin eli ns. ritariässä-valot
+ */
+
+//muuttujat
+byte ledKuvio1 = B00000001;
+byte ledKuvio2 = B00000010;
+byte ledKuvio3 = B00000100;
+byte ledKuvio4 = B00001000;
+byte ledKuvio5 = B00010000;
+byte ledKuvio6 = B00100000;
+byte ledKuvio7 = B01000000;
+byte ledKuvio8 = B10000000;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+  delay(100);
+   PORTD = ledKuvio2;
+  delay(100);
+   PORTD = ledKuvio3;
+  delay(100);
+   PORTD = ledKuvio4;
+  delay(100);
+   PORTD = ledKuvio5;
+  delay(100);
+   PORTD = ledKuvio6;
+  delay(100);
+   PORTD = ledKuvio7;
+  delay(100);
+   PORTD = ledKuvio8;
+  delay(100);
+  PORTD = ledKuvio7;
+  delay(100);
+   PORTD= ledKuvio6;
+  delay(100);
+   PORTD = ledKuvio5;
+  delay(100);
+   PORTD = ledKuvio4;
+  delay(100);
+   PORTD = ledKuvio3;
+  delay(100);
+   PORTD = ledKuvio2;
+  delay(100);
+   PORTD = ledKuvio1;
+ 
+}
+
+/*Harjoitus 2.9
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka juoksuttaa pimeää LEDiä edestakaisin eli ns. ritariässä-valot
+ */
+
+//muuttujat
+byte ledKuvio1 = B11111110;
+byte ledKuvio2 = B11111101;
+byte ledKuvio3 = B11111011;
+byte ledKuvio4 = B11110111;
+byte ledKuvio5 = B11101111;
+byte ledKuvio6 = B11011111;
+byte ledKuvio7 = B10111111;
+byte ledKuvio8 = B01111111;
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+  delay(100);
+   PORTD = ledKuvio2;
+  delay(100);
+   PORTD = ledKuvio3;
+  delay(100);
+   PORTD = ledKuvio4;
+  delay(100);
+   PORTD = ledKuvio5;
+  delay(100);
+   PORTD = ledKuvio6;
+  delay(100);
+   PORTD = ledKuvio7;
+  delay(100);
+   PORTD = ledKuvio8;
+  delay(100);
+  PORTD = ledKuvio7;
+  delay(100);
+   PORTD= ledKuvio6;
+  delay(100);
+   PORTD = ledKuvio5;
+  delay(100);
+   PORTD = ledKuvio4;
+  delay(100);
+   PORTD = ledKuvio3;
+  delay(100);
+   PORTD = ledKuvio2;
+  delay(100);
+   PORTD = ledKuvio1;
+ 
+}
