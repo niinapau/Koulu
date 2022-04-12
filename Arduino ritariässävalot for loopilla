@@ -1,0 +1,49 @@
+/*Harjoitus 2.10
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Tee ohjelma, joka juoksuttaa palavaa LEDiä edestakaisin eli ns. ritariässä-valot
+käyttäen for-silmukoita, pinMode() ja digitalWrite() funktioita.
+ */
+
+int viive = 100; //viive 100ms
+
+//tehdaan alkuasetukset/maarittelyt
+
+void setup()
+{
+  /*pinMode (0, OUTPUT);
+  pinMode (1, OUTPUT);
+  pinMode (2, OUTPUT);
+  pinMode (3, OUTPUT);
+  pinMode (4, OUTPUT);
+  pinMode (5, OUTPUT);
+  pinMode (6, OUTPUT);
+  pinMode (7, OUTPUT);
+  */
+
+  for(int pinni = 0; pinni < 8; pinni++)
+  {
+    pinMode(pinni, OUTPUT);
+  }
+  
+}
+
+void loop ()
+{
+for(int pinni = 0; pinni < 8; pinni++)
+{
+
+  digitalWrite(pinni, 1);
+  delay(viive);
+  digitalWrite(pinni, 0);
+  delay(viive);
+}
+for(int pinni = 6; pinni > 0; pinni--)
+{
+
+  digitalWrite(pinni, 1);
+  delay(viive);
+  digitalWrite(pinni, 0);
+  delay(viive);
+}
+}
