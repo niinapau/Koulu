@@ -1,0 +1,64 @@
+/*Harjoitus 1.2
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Ohjelmoidaan binäärilaskuri binäärilukuja ja rekistereitä DDRx ja PORTx käyttäen
+ */
+
+//muuttujat
+byte ledKuvio1 = B00000000; //0des
+byte ledKuvio2 = B00000001; //1des
+byte ledKuvio3 = B00000010; //2des
+byte ledKuvio4 = B00000011; //3des
+byte ledKuvio5 = B00000100; //4des
+byte ledKuvio6 = B00000101; //5des
+byte ledKuvio7 = B00000110; //6des
+byte ledKuvio8 = B00000111; //7des
+byte ledKuvio9 = B00001000; //8des
+byte ledKuvio10 = B00001001; //9des
+byte ledKuvio11 = B00001010; //10des
+byte ledKuvio12 = B00001011; //11des
+byte ledKuvio13 = B00001100; //12des
+byte ledKuvio14 = B00001101; //13des
+byte ledKuvio15 = B00001110; //14des
+byte ledKuvio16 = B00001111; //15des
+
+void setup() 
+{
+  DDRD = 0xFF; //portti D on output
+
+}
+
+void loop() 
+{
+  PORTD = ledKuvio1;
+  delay(500);
+  PORTD = ledKuvio2;
+  delay(500);
+  PORTD = ledKuvio3;
+  delay(500);
+  PORTD = ledKuvio4;
+  delay(500);
+  PORTD = ledKuvio5;
+  delay(500);
+  PORTD = ledKuvio6;
+  delay(500);
+  PORTD = ledKuvio7;
+  delay(500);
+  PORTD = ledKuvio8;
+  delay(500);
+  PORTD = ledKuvio9;
+  delay(500);
+  PORTD = ledKuvio10;
+  delay(500);
+  PORTD = ledKuvio11;
+  delay(500);
+  PORTD = ledKuvio12;
+  delay(500);
+  PORTD = ledKuvio13;
+  delay(500);
+  PORTD = ledKuvio14;
+  delay(500);
+  PORTD = ledKuvio15;
+  delay(500);
+  PORTD = ledKuvio16;
+}
