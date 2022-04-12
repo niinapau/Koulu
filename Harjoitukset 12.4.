@@ -1,0 +1,34 @@
+/*
+Ohjelmointiharjoitukset 6 (6.3)
+Date: 12.4.2022
+Author: Niina Paukkonen
+Comments: Kirjoita ohjelma, joka tulostaa kokonaisluvut 1 – 10 ja niiden neliöt (luku toisen potenssiin). Käytä
+while-silmukkaa. Ohjelma tulostaa lopuksi myös välillä 1 – 10 olevien kokonaislukujen
+summan. Käytä while-silmukkaa
+*/
+
+#include<iostream> //io-virta käyttöön
+using namespace std;
+
+int main()
+{
+	int luku = 1; //while-silmukalla
+
+	while (luku < 11)
+	{
+		cout << luku << "\t" << luku * luku << endl;
+		luku++;
+
+	}
+	
+	cout << "Tassa luvut ja niiden neliot do-while silmukalla" << endl;
+	int luku2 = 1;
+	do
+	{
+		cout << luku2 << "\t" << luku2 * luku2 << endl;
+		luku2++;
+	} while (luku2 < 11);
+
+	return 0;
+
+}
