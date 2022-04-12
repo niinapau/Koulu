@@ -1,0 +1,26 @@
+/*Harjoitus 1.2 ver 2
+ * Date: 12.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Ohjelmoidaan binäärilaskuri binäärilukuja ja rekistereitä DDRx ja PORTx käyttäen
+ */
+
+//muuttujat
+byte ledKuvio1 = B00000000; //0des
+
+
+//tehdään alkuasetukset/maarittelyt
+
+void setup()
+{
+  DDRD = 0xFF; //portti D on output
+}
+
+
+void loop ()
+{
+  PORTD = ledKuvio1;
+  delay(500);
+  ledKuvio1++;
+  if (ledKuvio1 == B00001111)
+  ledKuvio1 = B00000000;
+}
