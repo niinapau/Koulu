@@ -1,0 +1,36 @@
+/* Esimerkki3: vilkku
+ * Date: 19.4.2022
+ * Author: Niina Paukkonen
+ * Comments: Testaillaan kytkintä edelleen
+ */
+
+
+byte kytkin1 = 5; //kytkin kytketty pinniin 5
+byte ledi1 = 6; //led pinnissa 6
+int viive = 300;
+
+
+void setup() {
+  pinMode(kytkin1, INPUT);
+  pinMode(ledi1, OUTPUT);
+  Serial.begin(9600); //sarjamonitori kayttoon, nopeus 9600 baudia (bit/s)
+}
+
+void loop() {
+  boolean kytkimenTila = digitalRead(kytkin1); //luetaan kytkimen tila muuttujaan
+  if(kytkimenTila == 1)
+  {
+    digitalWrite(ledi1,HIGH);
+    delay(viive);
+    digitalWrite(ledi1, LOW);
+    delay(viive);
+  }
+  else
+  {
+    digitalWrite(ledi1,LOW);
+  }
+
+  Serial.print("Kytkimen tila on: ");
+  Serial.println(kytkimenTila);
+
+}
