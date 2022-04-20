@@ -17,7 +17,7 @@ Serial.begin(9600);
 
 void loop() {
 
-  //luetaan analoginen jannite pinnista A0, tehdaan AD-muunnos
+  //luetaan analoginen jannite pinnista A1, tehdaan AD-muunnos
   //ja sijoitetaan muunnostulos (0-1023) muuttujaan adc
 
   int adc = analogRead(fototransistori);
