@@ -1,0 +1,29 @@
+/* ADC-esimerkki 1
+ * Date: 20.6.2022
+ * Author: Niina Paukkonen
+ * Comments: kokeillaan ADC:tä
+ */
+
+
+byte ledit1 = 6; //pwm pinnit 3,5,6,9,10,11
+byte potikka = A0; //analoginen tulot A0 - A5
+
+
+void setup() {
+
+Serial.begin(9600);
+
+}
+
+void loop() {
+
+  //luetaan analoginen jannite pinnista A0, tehdaan AD-muunnos
+  //ja sijoitetaan muunnostulos (0-1023) muuttujaan adc
+
+  int adc = analogRead(potikka);
+
+  //kirjoitetaan pwm-lahtoon adc-muunnostulos/4, 10bit => 8bit
+  analogWrite(ledit1, adc/4);
+  Serial.println(adc);
+
+}
