@@ -1,0 +1,36 @@
+/* ADC-esimerkki 3, fototransistori
+ * Date: 20.6.2022
+ * Author: Niina Paukkonen
+ * Comments: Hamarakytkin fototransistorilla toteutettuna
+ */
+
+
+byte ledit1 = 6; //pwm pinnit 3,5,6,9,10,11
+byte fototransistori = A1;
+
+
+void setup() {
+
+Serial.begin(9600);
+pinMode(ledit1, OUTPUT);
+
+}
+
+void loop() {
+
+  //luetaan analoginen jannite pinnista A1, tehdaan AD-muunnos
+  //ja sijoitetaan muunnostulos (0-1023) muuttujaan adc
+
+  int adc = analogRead(fototransistori);
+ 
+  if (adc > 500)
+  {
+    digitalWrite(ledit1, 1);
+  }
+
+  else
+  {
+    digitalWrite(ledit1, 0);
+    
+  }
+  
